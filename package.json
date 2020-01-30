@@ -1,0 +1,45 @@
+{
+  "name": "webpack_scratch",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --optimize-minimize --hide-modules --config webpack.common.js",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config webpack.dev.js",
+    "analyze": " source-map-explorer ./dist/bundle.js ./dist/bundle.js.map"
+  },
+  "author": "mike moore <mike.moore1@mercer.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-stage-1": "^7.8.3",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-jsx-pragmatic": "^1.0.2",
+    "babel-plugin-transform-react-constant-elements": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-preset-es2015": "^6.24.1",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^5.2.1",
+    "css-loader": "^3.4.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "preact": "^10.2.1",
+    "sass-loader": "^7.3.1",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "core-js": "^2.6.11",
+    "es6-object-assign": "^1.1.0",
+    "linkstate": "^1.1.1",
+    "nodelist-foreach-polyfill": "^1.2.0",
+    "preact-habitat": "^3.3.0",
+    "source-map-explorer": "^2.2.2"
+  }
+}

@@ -1,0 +1,17 @@
+@import "./styleVariables.scss";
+
+
+
+
+.globalstrategyapp{
+    position: relative; 
+    p {
+       
+        font-size: inherit;
+        color: inherit;
+        margin: 0 0 1em 0;
+    }
+}
+.globalstrategyapp *, .globalstrategyapp *:before, .globalstrategyapp *:after{
+    box-sizing: border-box;
+}

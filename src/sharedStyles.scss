@@ -1,0 +1,55 @@
+@import "./styleVariables.scss";
+
+@mixin green-gradient() {
+    background: rgb(0,172,65);
+    background: linear-gradient(225deg, rgba(0,172,65,1) 0%, rgba(0,157,224,1) 100%);
+  }
+  
+.greyBG {
+    background: #F6F7F9;
+}
+.greenGradient {
+    @include green-gradient();
+}
+.grifoHeadline {
+    font-family: "Grifo", "Times New Roman", serif !important; 
+    font-weight: bold;
+}
+.readingText {
+    font-size: 16px;
+    line-height: (24 / 16);
+    p {
+        font-size: inherit;
+        line-height: inherit;
+    }
+    h2 {
+        color: inherit;
+        font-family: "Grifo", "Times New Roman", serif !important; 
+        font-weight: bold;
+        font-size: 26px;
+        line-height: (29/26);
+        margin-bottom: 8px;
+    }
+    ul, ol {
+        margin: 0 0 1em 0; 
+    }
+}
+.muteImportant {
+    font-family: "Mute", sans-serif !important;
+}
+.makeNavy {
+    color: #001F37 !important;
+}
+
+.textFullWidth {
+    width: $text-full-width;
+}
+
+
+a.headerLink, .headerLink {
+    text-decoration: underline;
+    color: $link-blue;
+    &:hover {
+        color: #007bb7;
+    }
+}
